@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chào mừng đến với Gau's</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section id="header">
+        <a href="#"><img src="anh/Logo.jpg" class="logo" alt=""></a>
+
+        <div>
+            <ul id="navbar">
+                <li><a href="main.html">Trang chủ</a></li>
+                <li><a href="gioithieu.html">Giới thiệu</a></li>
+                <li><a href="sanpham.html">Sản phẩm</a></li>
+                <li><a href="dangky.html">Đăng ký</a></li>
+                <li><a href="giohang.html">Giỏ hàng</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <div class="container">
+        <form class="form-login">
+            <h1>Đăng Ký</h1>
+            <div class="form-text">
+                <label>Username</label>
+                <input type="text">
+            </div>
+            <div class="form-text">
+                <label>Password</label>
+                <input type="password">
+            </div>
+            <button>Đăng Ký</button>
+        </form>
+    </div>
+    <script>
+        const formLogin = document.querySelectorAll('.form-text input')
+        const formLabel = document.querySelectorAll('.form-text label')
+        for(let i=0;i<2;i++){
+            formLogin[i].addEventListener("mouseover",function(){
+                formLabel[i].classList.add("focus")
+            } )
+            formLogin[i].addEventListener("mouseout",function(){
+                if(formLogin[i].value =="") {
+                    formLabel[i].classList.remove("focus")
+                }
+            } )
+        }
+    </script>
+    <footer class="section-p1">
+        <div class="col">
+            <h4>Thông tin sở hữu</h4>
+            <p><strong>Tên chủ sở Hữu:</strong> Trần Khôi Nguyên</p>
+            <p><strong>Mã số sinh viên:</strong> 2001210245</p>
+            <p><strong>Địa chỉ:</strong> Bùi Minh Trực, phường 6, Quận 8, TP.HCM</p>
+            <div class="follow"> </div>
+            <h4>Theo dỗi chúng tôi tại</h4>
+            <div class="icon">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-youtube"></i>
+            </div>
+            <p>Copyright © 2023 Bản quyền thuộc về Gấu Store</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

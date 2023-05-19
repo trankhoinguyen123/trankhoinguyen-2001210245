@@ -1,0 +1,428 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.logo{
+    height: 70px;
+}
+h1 {
+    font-size: 50px;
+    line-height: 64px;
+    color: black;
+}
+
+h2{
+    font-size: 46px;
+    line-height: 54px;
+    color: black;
+}
+
+h4{
+    font-weight: 700;
+    font-size: 12px;
+}
+
+p{
+    font-size: 16px;
+    color: darkgray;
+    margin: 15px 0 20px 0;
+}
+
+.section-p1 {
+    padding: 40px 80px;
+}
+.setion-m1 {
+    margin: 40px 0;
+}
+body {
+    width: 100%;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: wheat;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+}
+#navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+    transition: 0.3s ease;
+}
+
+#navbar li a:hover{
+    color: aqua;
+}
+/* Trang chủ */
+#hero{
+    background-image: url("anh/hero4.jpg");
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 25% right 0;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#hero h4{
+    padding-bottom: 15px;
+}
+
+#hero h1{
+    color: chocolate;
+}
+#hero p{
+    color: black;
+}
+#hero h3{
+    font-size: large;
+    font-weight: 700;
+    padding:  14px 70px 14px 60px;
+}
+#feature .fe-box{
+    width: 180px;
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+    border: 1px solid gray;
+    border-radius: 4px;
+    margin: 15px 0;
+}
+
+#feature .fe-box h6{
+    display: inline-block;
+    padding: 9px 8px 6px 8px;
+    line-height: 1;
+    border-radius: 4px;
+    color: red;
+    background-color: aquamarine;
+}
+
+#feature{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#page-header{
+    background-image: url("anh/b1.jpg");
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 14px;
+}
+#page-header h2{
+    color: black;
+}
+
+#product1 {
+    text-align: center;
+}
+
+#product1 .pro{
+    border: 1px solid grey;
+    width: 23%;
+    padding: 10px 12px;
+    min-width: 250px;
+    border-radius: 25px;
+    padding-top: 30px;
+}
+
+#product1 .pro img{
+    width: 200px;
+    border-radius: 20px;
+}
+
+#product1 .pro .des{
+    text-align: center;
+    padding: 5px;
+}
+
+#product1 .pro .des span{
+    color: red;
+    font-size: 15px;
+}
+
+#product1 .pro .des h5{
+    padding-top: 7px;
+    color: gray;
+    font-size: 18px;
+}
+
+#product1 .pro .des i{
+    color: yellow;
+}
+
+#product1 .pro .des h4{
+    font-size: 15px;
+    color: black  ;
+}
+
+#product1 .pro-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    flex-wrap: wrap;
+}
+
+footer {
+    display: flex;
+    background-color: antiquewhite;
+}
+
+footer h4{
+    font-size: 14px;
+    padding-bottom: 20px;
+    color: black;
+}
+ footer p{
+    font-size: 13px;
+    margin: 0 0 8px 0;
+    color: black;
+ }
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+a {
+    text-decoration: none;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("anh/nen.jpg");
+}
+.form-login{
+    width: 300px;
+    height: 500px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 40px 30px;
+}
+
+.form-login h1{
+    margin-bottom: 40px;
+}
+
+.form-login button{
+    height: 35px;
+    width: 100%;
+    margin-bottom: 30px;
+    background: lightgoldenrodyellow;
+    border: none;
+    color: red;
+    border-radius: 5px;
+}
+
+.form-text{
+    margin-bottom: 40px;
+    position: relative;
+}
+.form-text input{
+    width: 100%;
+    height: 35px;
+    border: none;
+    border-bottom: 2px solid#ccc;
+    cursor: pointer;
+    padding-left: 12px;
+}
+.form-text label{
+    position: absolute;
+    left: 12px;
+    bottom: 12px;
+    transition: 0.5s;
+
+}
+
+.form-text label.focus{
+    transform: translateY(-45px);
+}
+
+#sotrang {
+    text-align: center;
+}
+
+#sotrang a{
+    text-decoration: none;
+    background-color: burlywood;
+    padding: 15px 20px;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: 600;
+}
+
+#sotrang a i {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#aothungau .anh-ao{
+    width: 45%;
+    margin-right: 50px;
+    padding-top: 50px;
+}
+
+#aothungau {
+    display: flex;
+    margin-top: 20px;
+}
+
+#aothungau .thongtinao{
+    width: 50%;
+    padding-top: 50px;
+}
+#aothungau .thongtinao h4{
+    padding: 40px 0 20px 0;
+    font-size: 35px;
+}
+
+#aothungau .thongtinao h2{
+    font-size: 26px;
+}
+
+#aothungau .thongtinao select{
+    display: block;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+}
+
+#aothungau .thongtinao input{
+    width: 50px;
+    height: 47px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+#aothungau .thongtinao input:focus{
+    outline: none;
+}
+
+#aothungau .thongtinao button{
+    background: burlywood;
+    color: #fff;
+    border-radius: 25px;
+}
+
+#aothungau .thongtinao span{
+    line-height: 25px;
+}
+
+#gioithieubt {
+    background-image: url("anh/gioithieu.jpg"); 
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+#gioithieubt .anh-bt{
+    width: 600px;
+    margin-right: 50px;
+    padding-top: 10px;
+    padding-left: 100px;
+    display: flex;  
+}
+
+#gioithieubt .thongtinbt2{
+    border: 1px;
+    background-color: #ccc;
+    width: 550px;
+    text-align: center;
+}
+
+#gioithieubt .thongtinbt2 h6{
+    font-size: 60px;
+    color: darkred;
+}
+
+#gioithieubt .thongtinbt2 p{
+    font-size: 30px;
+    color: black;
+}
+
+.gio-hang{
+    margin: 80px auto;
+}
+
+.table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.cart-info{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+th{
+    text-align: left;
+    padding: 5px;
+    color: #fff;
+    background: #ff523b;
+    font-weight: normal;
+}
+td{
+    padding: 15px 5px;
+}
+
+td{
+    width: 600px;
+    height: 30px;
+    padding: 5px;
+}
+
+td a{
+    color: #ff523b;
+    font-size: 12px;
+}
+
+td img{
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
+
+.total-price{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.total-price table{
+    border-top: 5px solid #ff523b;
+    width: 100%;
+    max-width: 350px;
+}
